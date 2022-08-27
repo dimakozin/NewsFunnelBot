@@ -1,0 +1,28 @@
+{
+  "name": "newsfunnelbot",
+  "version": "0.0.1",
+  "description": "News Funnel for telegram bot",
+  "main": "index.js",
+  "scripts": {
+    "bot": "npx ts-node index.ts",
+    "build": "tsc index.ts",
+    "nodemon": "nodemon index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimakozin/NewsFunnelBot.git"
+  },
+  "keywords": [
+    "telegram",
+    "news"
+  ],
+  "author": "dimakozin <dimakozin@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dimakozin/NewsFunnelBot/issues"
+  },
+  "homepage": "https://github.com/dimakozin/NewsFunnelBot#readme",
+  "devDependencies": {
+    "@types/node": "^17.0.19"
+  }
+}
