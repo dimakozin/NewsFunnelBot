@@ -9,8 +9,6 @@ bot.on('message', (msg: any) => {
     const chatId = msg.from.id
     const userId = msg.from.username
 
-    console.log(msg)
-
     if(msg.text=='/start'){
         const startedMessage = "Привет! Это бот-аггрегатор новостей. Пришли мне новость и, возможно, мы ее опубликуем. Возможно :)"
         bot.sendMessage(chatId, startedMessage)
