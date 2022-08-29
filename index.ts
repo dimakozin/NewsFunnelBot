@@ -30,11 +30,13 @@ bot.on('message', (msg: any) => {
             text = msg.text
         }
 
-        text = `Поступила новость от пользователя @${userId}: \n` + text
-        bot.sendMessage(adminId, text)
-
-        if(!!photo) {
-            bot.sendMediaGroup(adminId, photo)
+        if(adminId != chatId){
+            text = `Поступила новость от пользователя @${userId}: \n` + text
+            bot.sendMessage(adminId, text)
+    
+            if(!!photo) {
+                bot.sendMediaGroup(adminId, photo)
+            }    
         }
 
         bot.sendMessage(chatId, "Спасибо за новость! Отправим ее на модерацию :)")
